@@ -17,4 +17,5 @@ _____
 - [] - Better UI for index.html {try to match with *home.html*}
 - [] - still need to update this todo list (gotta study for ap hg rn)
 
-*BTW - just clone this respitory and push changes to the **production** branch*
+**THIS IS THE PRODUCTION BRANCH; PUSH ANY CHANGES HERE**
+**DO NOT PUSH CHANGES TO MAIN, I WILL DO THAT**
