@@ -1,269 +1,149 @@
-<body id="container" style="background-color: #def0fa" >
-  <div id="header">
-   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
-   <meta charset="UTF-8">
-   <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-   <!-- Semantic Main CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
-   <!-- Semantic Reset CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/components/reset.min.css"/>
-   <!-- Semantic Menu CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/components/menu.min.css"/>
-   <!-- Main Semantic JS  -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
-   <!-- Custom CSS -->
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
-   <!-- Browser tab name -->
-   <title>LitBrain | Paper Validation Made Easy</title>
-   <!-- Navbar -->
-   <div class="ui attached inverted menu">
-       
-      <div class="right menu">
-    
-               <div class="item">
-               <a class="ui primary button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign in</a>
-           </div>
-           <div class="item">
-               <a class="ui default button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up</a>
-           </div>
-   
-       </div>
-   </div>
-
-  </div>
-
-
-<br><br>
-<center>
-
-  <img src="https://i.ibb.co/J5hHVjg/litbrain-logo.jpg" alt="Logo">
-</center>
-
-<center>
-<img src="https://cdn.dribbble.com/users/1641185/screenshots/4755063/ai_school_1.jpg" alt="infographic">
-</center>
-
-
-
-<center>
-<font size=6 color="black">Grade & Validate Essays Instantly! </font>
-</center>
-
-<center>
-<font size=2 color="black">LitBrain assists teachers by automating not only essay/paper grading, but also checking for plagarism and seeing how likely it was that a student's essay was written by AI </font>
-</center>
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif; background: #16607C}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>LitBrain | Paper Validation Made Easy</title>
+	<meta name="author" content="Jahan Taila">
+	<meta name="description" content="description here">
+	<meta name="keywords" content="keywords,here">
+	
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
-}
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
 
-/* Set a style for all buttons */
-button {
-background-color: #E0E0E0
-;
-color: black;
-border-radius: 25px;
+<style> 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #60a5fa #e2e8f0;
+  }
 
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-}
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 18px;
+  }
 
-button:hover {
-opacity: 0.8;
-}
+  *::-webkit-scrollbar-track {
+    background: #e2e8f0;
+  }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-width: auto;
-padding: 10px 18px;
-background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-text-align: center;
-margin: 24px 0 12px 0;
-position: relative;
-}
-
-img.avatar {
-width: 40%;
-border-radius: 50%;
-}
-
-.container {
-padding: 16px;
-}
-
-span.psw {
-float: right;
-padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-background-color: #fefefe;
-margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-border: 1px solid #888;
-width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-position: absolute;
-right: 25px;
-top: 0;
-color: #000;
-font-size: 35px;
-font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-color: red;
-cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
--webkit-animation: animatezoom 0.6s;
-animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-from {-webkit-transform: scale(0)} 
-to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-from {transform: scale(0)} 
-to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-span.psw {
-display: block;
-float: none;
-}
-.cancelbtn {
-width: 100%;
-}
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: #60a5fa;
+    border-radius: 5px;
+    border: 1px outset #ffffff;
+  }
 </style>
+
+
+  
 </head>
-<body>
-<center>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign in</button>
+<body class="bg-blue-100 font-sans leading-normal tracking-normal  ">
+	<!--Nav-->
+	<nav class="bg-gray-800 p-2 mt-0 w-full"> 
+		<div class="container mx-auto flex flex-wrap items-center">
+			<div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
+				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+          
+					<span class="text-4xl pl-2 text-blue-400 overflow-hidden" ><i class="em em-grinning"></i> LITBRAIN </span>
+				</a>
+			</div>
+			<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end overflow-hidden">
+				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center overflow-hidden">
+					<li class="mr-3">
+						<a class="inline-block py-2 px-4 text-blue-400 hover:underline text-lg " href="#">HOME</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block py-2 px-4 text-blue-400 hover:underline text-lg " href="#">ABOUT</a>
+					</li>
+					</li>
+					<li class="mr-3">
+						<button class = "bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Try Today!</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-</center>
-<div id="id01" class="modal">
+	<!--Hero-->
+	<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24 overflow-hidden">
+		<!--Left Col-->
+		<div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+        <!-- LOGO -->
+			  <img src="https://i.ibb.co/C1rrDSq/litbrain-logo-removebg-preview-1-1.png" alt="Logo" class = "">
+			<p class="font-bold text-2xl my-4">LitBrain assists educators by not only automatically grading essays and papers, but by additionally detecting cases of plagarism - in the form of artifically written papers.  </p>
+			<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Get Started!</button>
+		</div>
+		<!--Right Col-->
+		<div class="w-full lg:w-1/2 lg:py-6 text-center">
+			<!--demo image-->
+			<img src="https://i.ibb.co/WFm8QXv/screely-1648327365472-    
+  removebg-preview.png" class=" mx-auto"  style="position: 
+  relative;width: 100%; height: 512px; padding-bottom: 50px; 
+  transform: scale(1.1, 1.1); !important;">
+		</div>
+	</div>
 
-<form class="modal-content animate" action="/client/index.html">
-<div class="imgcontainer">
- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
- <img src="https://i.imgur.com/u5T5m7N.png" alt="Avatar" class="avatar">
-</div>
+ <!--scrool arrow indicator --> 
+<div class="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center" style="position: relative; left: 50%; margin-bottom: 20px; margin-top: -130px">
+      <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
 
-<div class="container">
- <label for="uname"><b>Username</b></label>
- <input type="text" placeholder="Enter Username" name="uname" required>
+  
+	<!--bottom section-->
+	<section class="  bg-blue-100 overflow-hidden " style = "padding-bottom: 30px" >
+	<div class="container px-4 mx-auto">
+		<div class="flex flex-wrap -mx-4">
+			<div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+				<div class="relative mx-auto md:ml-0 max-w-max">
+					<img class="absolute z-10 -right-8 -top-8 w-28 md:w-auto" src="flex-ui-assets/elements/circle3-yellow.svg" alt="">
+						<img class="absolute z-10 -left-10 -bottom-8 w-28 md:w-auto" src="flex-ui-assets/elements/dots3-blue.svg" alt="">
+							<img src="https://static.shuffle.dev/uploads/files/ff/ffc5d708cdc32118421980434346e34d4ce880c1/ai-school-1-2.webp" alt="">
+							</div>
+						</div>
+						<div class="w-full md:w-1/2 px-4">
+							
+							<h2 class="mb-12 text-4xl md:text-5xl leading-tight font-bold tracking-tighter font font-sans">Grade &amp; Validate Essays Instantly!</h2>
+							<div class="flex flex-wrap -mx-4 text-center md:text-left">
+								<div class="w-full md:w-1/2 px-4 mb-8">
+									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">1</div>
+									<h3 class="mb-2 text-xl font-bold">Upload</h3>
+									<p class="font-medium text-coolGray-500">Simply upload or type students' work, and let the AI grade and validate them for you! You can even upload multiple files at a time! </p>
+								</div>
+								<div class="w-full md:w-1/2 px-4 mb-8">
+									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">2</div>
+									<h3 class="mb-2 text-xl font-bold">Loading</h3>
+									<p class="font-medium text-coolGray-500">Our AI takes a while to load, so please be patient! This is because the AI compares your submissions to billions of existing word structures, and tries to find matches! </p>
+								</div>
+								<div class="w-full md:w-1/2 px-4 mb-8">
+									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">3</div>
+									<h3 class="mb-2 text-xl font-bold">Validation</h3>
+									<p class="font-medium text-coolGray-500">Our AI automatically validates students' work for you, so you don't have to worry about plagarism! Advanced graphs and statistics are generated to determine how likely it was that uploaded work was generated/written by an AI. </p>
+								</div>
+								<div class="w-full md:w-1/2 px-4">
+									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">4</div>
+									<h3 class="mb-2 text-xl font-bold">Grading <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">Beta Feature</span></h3>
 
- <label for="psw"><b>Password</b></label>
- <input type="password" placeholder="Enter Password" name="psw" required>
-   
- <button type="submit" a href="index.html">Login</button>
- <label>
-   <input type="checkbox" checked="checked" name="remember"> Remember me
- </label>
-</div>
+									<p class="font-medium text-coolGray-500">Our AI performs advanced analyis of students's work, and determines an appropriate grade. This feature is in development and may not be 100% accurate.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+ 
+			</section>
 
-<div class="container" style="background-color:#f1f1f1">
- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
- <span class="psw">Forgot <a href="#">password?</a></span>
-</div>
-</form>
-</div>
+  
 
-<div id="id02" class="modal">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
 
-<form class="modal-content animate" action="/client/index.html">
-<div class="imgcontainer">
- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
- <img src="https://i.imgur.com/u5T5m7N.png" alt="Avatar" class="avatar">
-</div>
-
-<div class="container">
- <label for="uname"><b>Username</b></label>
- <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="uname"><b>Email</b></label>
- <input type="text" placeholder="Enter Username" name="uname" required>
-
-
- <label for="psw"><b>Passsword</b></label>
- <input type="password" placeholder="Enter Password" name="psw" required>
-   
- <button type="submit" a href="index.html">Sign up</button>
- <label>
-   <input type="checkbox" checked="checked" name="remember"> Remember me
- </label>
-</div>
-
-<div class="container" style="background-color:#f1f1f1">
- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
- <span class="psw">Forgot <a href="#">password?</a></span>
-</div>
-</form>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modal) {
-   modal.style.display = "none";
-   //firebase
-}
-}
-</script>
-
+</footer>
+  
 </body>
+
+  
 </html>
