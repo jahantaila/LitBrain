@@ -23,8 +23,11 @@ _____
 
 ### TO-DO:
 _____________
-- [ ] Task title ~3d #type @name yyyy-mm-dd  
-  - [ ] Sub-task or description  
+- [x] Finish Home Screen
+  - [x] Implement Tailwind.css
+  - [x] Finish Styles
+  - [x] Scrollbar 
+  - [ ] Scroll animations     
 
 ### Completed Column ✓
 - [x] Completed task title  
