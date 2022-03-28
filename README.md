@@ -18,3 +18,13 @@ _____
 [] - still need to update this todo list (gotta study for ap hg rn)
 
 *BTW - just clone this respitory and push changes to the **production** branch*
+
+
+
+### TO-DO:
+_____________
+- [ ] Task title ~3d #type @name yyyy-mm-dd  
+  - [ ] Sub-task or description  
+
+### Completed Column ✓
+- [x] Completed task title  
