@@ -17,7 +17,7 @@ _____________
   - [x] Scrollbar 
   - [ ] Scroll animations **Will do later, not imoprtant**    
 
-- Fix Essay Validation System
+- [ ] Fix Essay Validation System
   - [x] Redo api calls
   - [ ] Styles (tailwind.css)
   - [ ] Fix HTML (index.html, layout needs to be fixed)
