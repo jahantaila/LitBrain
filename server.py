@@ -75,8 +75,15 @@ def send_data(path):
     """
     print('Got the data route for', path)
     return send_from_directory(args.dir, path)
+'''
+@app.route('/use')
+def getIndexPage(*path):
+    return redirect('client/index.html')
 
-
+@app.route('/about')
+def getIndex2(*args):
+    return redirect('client/about.html')
+'''
 # @app.route('/')
 # def redirect_home():
 #     return redirect('/client/index.html', code=302)
