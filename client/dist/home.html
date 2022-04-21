@@ -11,62 +11,90 @@
 	
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b"/>
+		<link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css"/>
+    <link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-zospace/css/css/tailwind.css"/>
+    <link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-zospace/css/tailwind.min.css?v=bd4"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3nPWN.woff2"/>
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYLUv0.woff2"/>
 
-<style> 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #60a5fa #e2e8f0;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 18px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #e2e8f0;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #60a5fa;
-    border-radius: 5px;
-    border: 1px outset #ffffff;
-  }
-</style>
-
+		<script src="https://shuffle.dev/vendor/tailwind-zospace/js/main.js"></script>
 
   
 </head>
 
 <body class="bg-blue-100 font-sans leading-normal tracking-normal  ">
-	<!--Nav-->
-	<nav class="bg-gray-800 p-2 mt-0 w-full"> 
-		<div class="container mx-auto flex flex-wrap items-center">
-			<div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-				<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-          
-					<span class="text-4xl pl-2 text-blue-400 overflow-hidden" ><i class="em em-grinning"></i> LITBRAIN </span>
+	<section class="pb-20 bg-gray-800">
+		<nav class="relative">
+			<div class="flex py-8 px-4 lg:px-8 justify-between items-center">
+				<a class="text-2xl text-white font-bold" href="#">
+					<img class="h-7 pl-8" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="LOGO" style = "transform: scale(2)" width="auto">
 				</a>
+				<div class="lg:hidden">
+					<button class="p-2 navbar-burger">
+						<svg class="w-10 h-3" width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="39" height="2" rx="1" fill="#C4C4C4"></rect><rect x="19" y="11" width="20" height="2" rx="1" fill="#C4C4C4"></rect></svg>
+					</button>
+				</div>
+				<div class="hidden lg:block absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+					<ul class="flex items-center text-white space-x-10">
+						<li><a class="text-white font-bold text-lg" href="#">Product</a></li>
+						<span>
+							<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+						</span>
+						<li><a class="text-white font-bold text-lg" href="#">Story</a></li>
+						<span>
+							<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+						</span>
+						<li><a class="text-white font-bold text-lg" href="#">Features</a></li>
+						<span>
+							<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+						</span>
+						<li><a class="text-white font-bold text-lg" href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="hidden lg:block"><a class="inline-block px-12 py-4 text-white font-bold border border-gray-200 hover:border-white rounded-full" href="#">Sign Up</a></div>
 			</div>
-			<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end overflow-hidden">
-				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center overflow-hidden">
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-blue-400 hover:underline text-lg " href="#">HOME</a>
-					</li>
-					<li class="mr-3">
-						<a class="inline-block py-2 px-4 text-blue-400 hover:underline text-lg " href="/client/about.html">ABOUT</a>
-					</li>
-					</li>
-					<li class="mr-3">
-						<button class = "bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick="window.location.href='/client/index.html'">Try Today!</button>
-					</li>
-				</ul>
+		</nav>
+		<div class="relative container px-4 pt-12 md:pt-20 mx-auto">
+			<div class="flex flex-wrap items-center -mx-4 mb-20 2xl:mb-14">
+				<div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+					<span class="text-lg font-bold text-blue-400">Essay Validation Made Easy</span>
+					<h2 class="max-w-2xl mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">Validate student essays with ease</h2>
+					<p class="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">LitBrain provides educators with an easy solution to the growing problem of artifically generated essays. </p>
+					<a class="inline-block px-12 py-4 text-lg text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#" >Learn how</a>
+				</div>
+				<div class="w-full lg:w-1/2 px-4">
+					<img class="w-full" src="zospace-assets/images/men-circle-stars.png" alt="">
+				</div>
 			</div>
 		</div>
-	</nav>
-
+		<!--hidden navbar (responsive)-->
+		<div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+			<nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
+				<div class="flex items-center mb-16 pr-6">
+					<a class="ml-10 mr-auto text-2xl text-gray-800 font-bold" href="#">
+						<img class="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto">
+					</a>
+				</div>
+				<div>
+					<ul>
+						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Product</a></li>
+						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Story</a></li>
+						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Features</a></li>
+						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="mt-auto px-10">
+					<div class="pt-6"><a class="block mb-4 py-4 px-12 text-gray-800 text-center font-bold border border-gray-50 hover:border-gray-100 rounded-full" href="#">Sign in</a><a class="block py-4 px-12 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#">Sign up</a></div>
+					<p class="mt-6 mb-4 text-lg text-center">
+						<span>2021 © Zospace. All rights reserved.</span>
+					</p>
+				</div>
+			</nav>
+		</div>
+	</section>
 	<!--Hero-->
 	<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24 overflow-hidden">
 		<!--Left Col-->
