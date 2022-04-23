@@ -17,10 +17,15 @@
 		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/tailwind.min.css?v=bd4"/>
 
 		<script src="https://shuffle.dev/vendor/tailwind-uinel/js/main.js"></script>
-  
+  <style> 
+		html {
+			scroll-behavior: smooth;
+		 }
+
+	</style>
 </head>
 
-<body class="bg-blue-100 font-sans leading-normal tracking-normal  ">
+<body class="bg-blue-100 font-sans leading-normal tracking-normal " >
 	<div>
 		<div class="text-gray-700 font-heading font-medium relative bg-gray-50 bg-opacity-50">
 			<nav class="flex justify-between px-6 lg:px-12 py-8">
@@ -31,7 +36,7 @@
 					<ul class="hidden xl:flex px-4 ml-32">
 						<li class="mr-16"><a class="text-gray-400 hover:text-gray-500" href="#">About Us</a></li>
 						<li class="mr-16">
-							<a class="flex items-center text-gray-400 hover:text-gray-500" href="#">
+							<a class="flex items-center text-gray-400 hover:text-gray-500" href="#howitworks">
 								<span class="mr-4">How It Works</span>
 							</a>
 						</li>
@@ -57,22 +62,10 @@
 				<nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
 					<div class="flex items-center pl-16 mb-8">
 						<a class="text-2xl text-gray-800 font-bold" href="#">
-							<img class="h-12" src="uinel-assets/logos/uinel-gray-black.svg" alt="">
+							<img class="h-12" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="">
 						</a>
 					</div>
-					<div class="flex items-center mb-10 px-10">
-						<a class="flex items-center ml-1" href="#">
-							<img class="ml-6" src="uinel-assets/elements/navigations/avatar-online.png" alt="">
-							<img class="ml-6" src="uinel-assets/elements/navigations/arrow-down-gray.svg" alt="">
-						</a>
-						<a class="text-gray-400 hover:text-gray-500 ml-auto" href="#">
-							<svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M1 18.0121H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-								<path d="M8.87891 22H10.8789" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-							</svg>
-						</a>
-					</div>
+				
 					<div>
 						<ul>
 							<li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">About Us</a></li>
@@ -81,15 +74,18 @@
 									<span>How It Works</span>
 								</a>
 							</li>
-							<li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">Pricing</a></li>
+							<li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">Features</a></li>
 						</ul>
 					</div>
 					<div class="mt-auto px-10">
 						<button class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full">
-							<span class="block mt-px">New project</span>
+							<span class="block mt-px">Demo</span>
+						</button>
+						<button class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full">
+							<span class="block mt-px">Try It Today!</span>
 						</button>
 						<p class="mt-6 mb-4 text-center">
-							<span class="text-sm text-darkBlueGray-400">2021 © Uinel. All rights reserved.</span>
+							<span class="text-sm text-darkBlueGray-400">2022 © LitBrain. All rights reserved.</span>
 						</p>
 					</div>
 				</nav>
@@ -117,7 +113,7 @@
 									<span class="relative z-10">easy</span> 
 								</span>
 							</h1>
-							<p class="mb-16 lg:mb-18 text-xl text-darkBlueGray-400 leading-snug" style = "width: 70% !important; "> LitBrain provides educators with an easy-to-use solution to the growing problem of artificially generated essays.   </p>
+							<p class="mb-10 lg:mb-10 text-xl text-darkBlue-400 leading-snug" style = "width: 70% !important; "> LitBrain provides educators with an easy-to-use solution to the growing problem of artificially generated essays.   </p>
 							<div class="flex flex-col sm:flex-row">
 								<input class="py-5 px-10 text-xl text-darkBlueGray-400 placeholder-blue-400 outline-none rounded-xl" type="email" placeholder="Enter Your email">
 								<button class="py-5 px-10 mt-3 sm:mt-0 sm:-ml-4 font-heading font-medium tracking-tighter text-xl text-white text-center bg-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:bg-blue-600 rounded-xl">Get started</button>
@@ -126,7 +122,7 @@
 						<div class="w-full lg:w-1/2 px-4">
 							<div class="relative max-w-sm xl:max-w-none mx-auto" style="transform: scale(1.6)">
 								<img class="relative xl:max-w-max z-10" src="https://i.ibb.co/mhY9KVx/screely-1650586941937-removebg-preview-3.png" alt="" >
-								<img class="absolute -top-3 -left-24 xl:max-w-max" src="https://shuffle.dev/uinel-assets/images/heroes/elipse.png" alt="COOL GRAPHIC" style="pointer-events: none;" style="position: fixed;">
+								<img class="absolute -top-3 -left-24 xl:max-w-max" src="https://shuffle.dev/uinel-assets/images/heroes/elipse.png" alt="COOL GRAPHIC"  style="position: fixed; pointer-events: none; z-index: -5"> 
 							</div>
 						</div>
 					</div>
@@ -134,101 +130,63 @@
 			</div>
 		</section>
 	</div>
-		<!--hidden navbar (responsive)-->
-		<div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-			<nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
-				<div class="flex items-center mb-16 pr-6">
-					<a class="ml-10 mr-auto text-2xl text-gray-800 font-bold" href="#">
-						<img class="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto">
-					</a>
+
+	<section class="lg:flex lg:items-center pt-24 lg:pt-0 bg-white" id = "howitworks"><div class="container px-4 mx-auto lg:w-1/2">
+		<div class="lg:flex justify-between">
+			<div class="mb-20 lg:mb-0 mx-auto lg:max-w-xl">
+				<span class="block mb-9 text-xs font-medium uppercase leading-4 text-gray-300 tracking-widest">How it works</span>
+				<h2 class="mb-12 text-9xl md:text-10xl xl:text-11xl font-medium font-heading leading-none">Easy &amp; simple to use!</h2>
+				<p class="2xl:pr-36 mb-16 lg:mb-20 text-xl lg:text-2xl leading-relaxed font-heading font-medium">LitBrain assists educators by not only automatically grading essays and papers, but by additionally detecting cases of plagarism - in the form of artifically written papers.
+	
+				</p>
+				<div class="mb-12 font-heading">
+					<button class="py-5 px-10 mb-4 md:mb-0 mr-0 md:mr-5 w-full md:w-auto text-xl leading-none font-medium tracking-tighter font-heading bg-gray-50 hover:bg-gray-100 focus:ring-2 focus:ring-gray-50 focus:ring-opacity-50 rounded-xl" type="button">More</button>
+					<button class="py-5 px-10 w-full md:w-auto text-xl leading-none text-white font-medium tracking-tighter font-heading bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl" type="button">Get started</button>
 				</div>
+				<p class="text-lg leading-6 text-darkBlueGray-400 font-normal">Try LitBrain Today!</p>
+			</div>
+		</div>
+		</div>
+		<div class="px-6 lg:px-20 py-24 lg:py-24 lg:w-1/2 bg-blueGray-100 lg:rounded-b-10xl">
+			<div class="flex flex-col lg:flex-row py-10 px-8 xl:px-14 mb-2 bg-white rounded-3xl" style = "margin-bottom: 10% !important; ">
 				<div>
-					<ul>
-						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Product</a></li>
-						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Story</a></li>
-						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Features</a></li>
-						<li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="mt-auto px-10">
-					<div class="pt-6"><a class="block mb-4 py-4 px-12 text-gray-800 text-center font-bold border border-gray-50 hover:border-gray-100 rounded-full" href="#">Sign in</a><a class="block py-4 px-12 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#">Sign up</a></div>
-					<p class="mt-6 mb-4 text-lg text-center">
-						<span>2021 © Zospace. All rights reserved.</span>
-					</p>
-				</div>
-			</nav>
-		</div>
-	</section>
-	<!--Hero-->
-	<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24 overflow-hidden">
-		<!--Left Col-->
-		<div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
-        <!-- LOGO -->
-			  <img src="https://i.ibb.co/C1rrDSq/litbrain-logo-removebg-preview-1-1.png" alt="Logo" class = "">
-			<p class="font-bold text-2xl my-4">LitBrain assists educators by not only automatically grading essays and papers, but by additionally detecting cases of plagarism - in the form of artifically written papers.  </p>
-			<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Get Started!</button>
-		</div>
-		<!--Right Col-->
-		<div class="w-full lg:w-1/2 lg:py-6 text-center">
-			<!--demo image-->
-			<img src="https://i.ibb.co/WFm8QXv/screely-1648327365472-    
-  removebg-preview.png" class=" mx-auto"  style="position: 
-  relative;width: 100%; height: 512px; padding-bottom: 50px; 
-  transform: scale(1.1, 1.1); !important;">
-		</div>
-	</div>
-
- <!--scrool arrow indicator --> 
-<div class="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center" style="position: relative; left: 50%; margin-bottom: 20px; margin-top: -130px">
-      <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </div>
-
-  
-	<!--bottom section-->
-	<section class="  bg-blue-100 overflow-hidden " style = "padding-bottom: 30px" >
-	<div class="container px-4 mx-auto">
-		<div class="flex flex-wrap -mx-4">
-			<div class="w-full md:w-1/2 px-4 mb-16 md:mb-0">
-				<div class="relative mx-auto md:ml-0 max-w-max">
-					<img class="absolute z-10 -right-8 -top-8 w-28 md:w-auto" src="flex-ui-assets/elements/circle3-yellow.svg" alt="">
-						<img class="absolute z-10 -left-10 -bottom-8 w-28 md:w-auto" src="flex-ui-assets/elements/dots3-blue.svg" alt="">
-							<img src="https://static.shuffle.dev/uploads/files/ff/ffc5d708cdc32118421980434346e34d4ce880c1/ai-school-1-2.webp" alt="">
-							</div>
-						</div>
-						<div class="w-full md:w-1/2 px-4">
-							
-							<h2 class="mb-12 text-4xl md:text-5xl leading-tight font-bold tracking-tighter font font-sans">Grade &amp; Validate Essays Instantly!</h2>
-							<div class="flex flex-wrap -mx-4 text-center md:text-left">
-								<div class="w-full md:w-1/2 px-4 mb-8">
-									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">1</div>
-									<h3 class="mb-2 text-xl font-bold">Upload</h3>
-									<p class="font-medium text-coolGray-500">Simply upload or type students' work, and let the AI grade and validate them for you! You can even upload multiple files at a time! </p>
-								</div>
-								<div class="w-full md:w-1/2 px-4 mb-8">
-									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">2</div>
-									<h3 class="mb-2 text-xl font-bold">Loading</h3>
-									<p class="font-medium text-coolGray-500">Our AI takes a while to load, so please be patient! This is because the AI compares your submissions to billions of existing word structures, and tries to find matches! </p>
-								</div>
-								<div class="w-full md:w-1/2 px-4 mb-8">
-									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">3</div>
-									<h3 class="mb-2 text-xl font-bold">Validation</h3>
-									<p class="font-medium text-coolGray-500">Our AI automatically validates students' work for you, so you don't have to worry about plagarism! Advanced graphs and statistics are generated to determine how likely it was that uploaded work was generated/written by an AI. </p>
-								</div>
-								<div class="w-full md:w-1/2 px-4">
-									<div class="inline-flex items-center justify-center mb-4 w-12 h-12 text-xl text-white bg-blue-500 font-semibold rounded-full">4</div>
-									<h3 class="mb-2 text-xl font-bold">Grading <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-200 dark:text-yellow-900">Beta Feature</span></h3>
-
-									<p class="font-medium text-coolGray-500">Our AI performs advanced analyis of students's work, and determines an appropriate grade. This feature is in development and may not be 100% accurate.</p>
-								</div>
-							</div>
-						</div>
+					<div class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full">
+						<span class="text-2xl font-bold">1</span>
 					</div>
 				</div>
- 
-			</section>
+				<div class="lg:ml-4 xl:ml-12" >
+					<h2 class="mb-6 font-heading font-medium text-7xl xl:text-8xl leading-tight">Upload </h2>
+					<p class="lg:max-w-sm text-lg leading-6 text-darkBlueGray-400">Simply upload or type students' work, and let the AI grade and validate them for you! You can even upload multiple files at a time!
+	
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col lg:flex-row py-10 px-8 xl:px-14 mb-2 bg-white rounded-3xl" style = "margin-bottom: 10% !important; ">
+				<div>
+					<div class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full">
+						<span class="text-2xl font-bold">2</span>
+					</div>
+				</div>
+				<div class="lg:ml-4 xl:ml-12">
+					<h2 class="mb-6 font-heading font-medium text-7xl xl:text-8xl leading-tight">Validation</h2>
+					<p class="lg:max-w-sm text-lg leading-6 text-darkBlueGray-400">Our AI automatically validates students' work for you, so you don't have to worry about plagarism! Advanced graphs and statistics are generated to determine how likely it was that uploaded work was generated/written by an AI.
+	
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col lg:flex-row py-10 px-8 xl:px-14 bg-white rounded-3xl">
+				<div>
+					<div class="relative inline-flex items-center justify-center mb-8 w-12 h-12 leading-6 text-white bg-blue-500 rounded-full">
+						<span class="text-2xl font-bold">3</span>
+					</div>
+				</div>
+				<div class="lg:ml-4 xl:ml-12">
+					<h2 class="mb-6 font-heading font-medium text-7xl xl:text-8xl leading-tight">Grading</h2>
+					<p class="lg:max-w-sm text-lg leading-6 text-darkBlueGray-400">Our AI performs advanced analyis of students's work, and determines an appropriate grade. This feature is in development and may not be 100% accurate.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
   
 
