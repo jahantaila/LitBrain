@@ -11,64 +11,133 @@
 	
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-		<link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b"/>
 		<link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css"/>
-    <link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-zospace/css/css/tailwind.css"/>
-    <link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-zospace/css/tailwind.min.css?v=bd4"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.gstatic.com/s/sen/v5/6xKjdSxYI9_3nPWN.woff2"/>
-    <link rel="stylesheet" href="https://fonts.gstatic.com/s/sen/v5/6xKudSxYI9__J9CYLUv0.woff2"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/css\tailwind.css"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/tailwind.min.css?v=bd4"/>
 
-		<script src="https://shuffle.dev/vendor/tailwind-zospace/js/main.js"></script>
-
+		<script src="https://shuffle.dev/vendor/tailwind-uinel/js/main.js"></script>
   
 </head>
 
 <body class="bg-blue-100 font-sans leading-normal tracking-normal  ">
-	<section class="pb-20 bg-gray-800 overflow-hidden">
-		<nav class="relative">
-			<div class="flex py-8 px-4 lg:px-8 justify-between items-center">
-				<a class="text-2xl text-white font-bold" href="#">
-					<img class="h-7 pl-8" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="LOGO" style = "transform: scale(2)" width="auto">
-				</a>
-				<div class="lg:hidden">
-					<button class="p-2 navbar-burger">
-						<svg class="w-10 h-3" width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="39" height="2" rx="1" fill="#C4C4C4"></rect><rect x="19" y="11" width="20" height="2" rx="1" fill="#C4C4C4"></rect></svg>
-					</button>
-				</div>
-				<div class="hidden lg:block absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-					<ul class="flex items-center text-white space-x-10">
-						<li><a class="text-white font-bold text-lg" href="#">Product</a></li>
-						<span>
-							<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
-						</span>
-						<li><a class="text-white font-bold text-lg" href="#">Story</a></li>
-						<span>
-							<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
-						</span>
-						<li><a class="text-white font-bold text-lg" href="#">Features</a></li>
-						<span>
-							<svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
-						</span>
-						<li><a class="text-white font-bold text-lg" href="#">Contact</a></li>
+	<div>
+		<div class="text-gray-700 font-heading font-medium relative bg-gray-50 bg-opacity-50">
+			<nav class="flex justify-between px-6 lg:px-12 py-8">
+				<div class="flex w-full items-center">
+					<a href="#">
+						<img class="h-12" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="">
+					</a>
+					<ul class="hidden xl:flex px-4 ml-32">
+						<li class="mr-16"><a class="text-gray-400 hover:text-gray-500" href="#">About Us</a></li>
+						<li class="mr-16">
+							<a class="flex items-center text-gray-400 hover:text-gray-500" href="#">
+								<span class="mr-4">How It Works</span>
+							</a>
+						</li>
+						<li><a class="text-gray-400 hover:text-gray-500" href="#">Pricing</a></li>
 					</ul>
+					<div class="hidden xl:flex items-center ml-auto">
+						<a class="text-gray-400 hover:text-gray-500" href="#">
+							<svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M1 18.0121H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.87891 22H10.8789" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</a>
+						<div class="w-px h-12 bg-gray-200 bg-opacity-50 ml-9 mr-11"></div>
+						
+						<button class="uppercase text-sm font-bold font-body border-2 border-gray-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-gray-300">
+							<span class="block mt-px">Try It Today!</span>
+						</button>
+					</div>
 				</div>
-				<div class="hidden lg:block"><a class="inline-block px-12 py-4 text-white font-bold border border-gray-200 hover:border-white rounded-full" href="#">Sign Up</a></div>
-			</div>
-		</nav>
-		<div class="relative container px-4 pt-12 md:pt-20 mx-auto">
-			<div class="flex flex-wrap items-center -mx-4 mb-20 2xl:mb-14">
-				<div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-					<span class="text-lg font-bold text-blue-400">Essay Validation Made Easy</span>
-					<h2 class="max-w-2xl mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">Validate student essays with ease</h2>
-					<p class="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100" style = "margin-bottom: 5% !important; ">LitBrain provides educators with an easy-to-use solution to the growing problem of artifically generated essays. </p>
-					<a class="inline-block px-12 py-4 text-lg text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200"  href="#" >Learn how</a>
-				</div>
-				<div class="w-full lg:w-1/2 px-4">
-					<img class="w-full" src="https://i.ibb.co/mhY9KVx/screely-1650586941937-removebg-preview-3.png" style = "transform: scale(1.3); padding-bottom: 15%">
-				</div>
+				<button class="navbar-burger self-center xl:hidden text-gray-400 hover:text-gray-500 focus:outline-none">
+					<svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="2" fill="currentColor"></rect><rect y="14" width="25" height="2" fill="currentColor"></rect></svg>
+				</button>
+			</nav>
+			<div class="navbar-menu hidden fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
+				<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+				<nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
+					<div class="flex items-center pl-16 mb-8">
+						<a class="text-2xl text-gray-800 font-bold" href="#">
+							<img class="h-12" src="uinel-assets/logos/uinel-gray-black.svg" alt="">
+						</a>
+					</div>
+					<div class="flex items-center mb-10 px-10">
+						<a class="flex items-center ml-1" href="#">
+							<img class="ml-6" src="uinel-assets/elements/navigations/avatar-online.png" alt="">
+							<img class="ml-6" src="uinel-assets/elements/navigations/arrow-down-gray.svg" alt="">
+						</a>
+						<a class="text-gray-400 hover:text-gray-500 ml-auto" href="#">
+							<svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.5219 18.016H2.70312V8.5933C2.70313 6.719 3.48375 4.92147 4.87328 3.59614C6.2628 2.27081 8.1474 1.52625 10.1125 1.52625C12.0776 1.52625 13.9622 2.27081 15.3517 3.59614C16.7412 4.92147 17.5219 6.719 17.5219 8.5933V18.016Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M1 18.0121H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.87891 22H10.8789" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</a>
+					</div>
+					<div>
+						<ul>
+							<li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">About Us</a></li>
+							<li class="mb-1 px-10">
+								<a class="flex items-center pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">
+									<span>How It Works</span>
+								</a>
+							</li>
+							<li class="mb-1 px-10"><a class="block pl-8 py-4 text-body text-lg rounded-full hover:shadow-2xl" href="#">Pricing</a></li>
+						</ul>
+					</div>
+					<div class="mt-auto px-10">
+						<button class="py-3 px-5 mt-6 w-full text-body font-body font-bold uppercase tracking-wide text-sm border-2 border-gray-200 hover:border-gray-300 border-opacity-50 rounded-full">
+							<span class="block mt-px">New project</span>
+						</button>
+						<p class="mt-6 mb-4 text-center">
+							<span class="text-sm text-darkBlueGray-400">2021 © Uinel. All rights reserved.</span>
+						</p>
+					</div>
+				</nav>
+				<button class="navbar-close absolute top-5 p-6 right-5">
+					<div class="absolute top-3">
+						<span class="absolute w-px h-6 bg-black transform -rotate-45"></span>
+						<span class="absolute w-px h-6 bg-black transform rotate-45"></span>
+					</div>
+				</button>
 			</div>
 		</div>
+		<section class="pb-16 2xl:pb-20 overflow-hidden">
+			<div class="relative bg-blueGray-100 rounded-b-10xl">
+				<div class="container px-4 mx-auto">
+					<div class="flex flex-wrap items-center -mx-4 pt-16 pb-20">
+						<div class="w-full lg:w-1/2 px-4 mb-24 lg:mb-0">
+							<span class="block mb-9 font-medium tracking-widest uppercase text-sm text-blue-500">Paper Validation Made Easy</span>
+							<h1 class="max-w-xl mb-16 font-heading font-medium text-9xl md:text-10xl xl:text-13xl leading-none">
+								<span>A thousand tools for</span>
+								<span class="relative inline-block">
+									<span class="absolute inset-0 xl:-left-8 xl:-right-8">
+										<img class="absolute inset-0 w-full max-w-non" src="https://shuffle.dev/uinel-assets/elements/heroes/lines-blue1.svg" alt="">
+										<img class="absolute inset-0 mt-1 lg:mt-2 xl:ml-4 w-full max-w-none" src="https://shuffle.dev/uinel-assets/elements/heroes/lines-blue2.svg" alt="">
+									</span>
+									<span class="relative z-10">design</span>
+								</span>
+							</h1>
+							<p class="mb-16 lg:mb-24 text-xl text-darkBlueGray-400 leading-snug">Fusce sem lectus, pretium at pellentesque a sagittis non.</p>
+							<div class="flex flex-col sm:flex-row">
+								<input class="py-5 px-10 text-xl text-darkBlueGray-400 placeholder-darkBlueGray-400 outline-none rounded-xl" type="text" placeholder="Enter email">
+								<button class="py-5 px-10 mt-3 sm:mt-0 sm:-ml-4 font-heading font-medium tracking-tighter text-xl text-white text-center bg-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 hover:bg-blue-600 rounded-xl">Get started</button>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2 px-4">
+							<div class="relative max-w-sm xl:max-w-none mx-auto" style="transform: scale(1.6)">
+								<img class="relative xl:max-w-max z-10" src="https://i.ibb.co/mhY9KVx/screely-1650586941937-removebg-preview-3.png" alt="" >
+								<img class="absolute -top-3 -left-24 xl:max-w-max" src="https://shuffle.dev/uinel-assets/images/heroes/elipse.png" alt="COOL GRAPHIC" style="pointer-events: none;" style="position: fixed;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 		<!--hidden navbar (responsive)-->
 		<div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
 			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
