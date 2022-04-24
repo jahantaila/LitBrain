@@ -27,101 +27,77 @@
         gtag('config', 'UA-135666388-1');
     </script>
 
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+		<link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/css\tailwind.css"/>
+		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/tailwind.min.css?v=bd4"/>
 
+		<script src="https://shuffle.dev/vendor/tailwind-uinel/js/main.js"></script>
 </head>
 
 <body>
 
-    <!--<div class="navbar">-->
-    <!--<div class="navbarContent">-->
-    <!--<span class="navbarTitle">  </span>-->
-    <!--<span>project:</span>-->
-    <!--<select class="custom-select" id="project_selector">-->
-    <!--<option selected>Select Project</option>-->
-    <!--&lt;!&ndash;<option value="1">One</option>&ndash;&gt;-->
-    <!--&lt;!&ndash;<option value="2">Two</option>&ndash;&gt;-->
-    <!--&lt;!&ndash;<option value="3">Three</option>&ndash;&gt;-->
-    <!--</select>-->
-    <!--<span>layer:</span>-->
-    <!--<select class="custom-select" id="layer_selector">-->
-    <!--&lt;!&ndash;<option value="0">0</option>&ndash;&gt;-->
-
-    <!--</select>-->
-    <!--<button id="sidebar_btn" class="onoffswitch on"-->
-    <!--style="right:5px;position: absolute;padding: 5px;">units-->
-    <!--</button>-->
-    <!--<i class="fas fa-eye" style="color: white"></i>-->
-    <!--&lt;!&ndash;<span>images:</span>&ndash;&gt;-->
-    <!--<label for='image_select' style="padding-right: 5px;">images:</label>-->
-    <!--<input id='image_select' type="text" value="42" style="width: 200px;">-->
-    <!--&lt;!&ndash;<span>tgt:</span>&ndash;&gt;-->
-    <!--&lt;!&ndash;<input id='target_select' type="number" value="0">&ndash;&gt;-->
-    <!--&lt;!&ndash;<button id="do_btn" class="btn">query</button>&ndash;&gt;-->
-
-    <!--<label for="input_zoom">zoom:</label>-->
-    <!--<input type="number" id="input_zoom" step=".1" value="1.2">-->
-
-    <!--<label for="input_opacity">opacity:</label>-->
-    <!--<input type="range" id="input_opacity" class='slider'-->
-    <!--value=".3" min="0" max=".5" step=".05">-->
-
-    <!--&lt;!&ndash;<span>ablate first:</span>&ndash;&gt;-->
-    <!--&lt;!&ndash;<input id='noAb' type="number" value="20">&ndash;&gt;-->
+   
 
 
-    <!--</div>-->
-    <!--</div>-->
-
-
-    <div id="header">
-        <div id="headertext">
-            <span style="font-weight: bold;">G</span>iant <span style="font-weight: bold;">L</span>anguage model <span
-                style="font-weight: bold;">T</span>est <span style="font-weight: bold;">R</span>oom
-
-        </div>
+    <div>
+		<div class="text-gray-700 font-heading font-medium relative bg-gray-50 bg-opacity-50" id = "header">
+			<nav class="flex justify-between px-6 lg:px-12 py-8">
+				<div class="flex w-full items-center">
+					<a href="#">
+						<img class="h-12" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="">
+					</a>
+					<ul class="hidden xl:flex px-4 ml-32">
+						<li class="mr-16"><a class="text-gray-400 hover:text-gray-500" href="#howitworks">About Us</a></li>
+						<li class="mr-16">
+							<a class="flex items-center text-gray-400 hover:text-gray-500" href="#howitworks">
+								<span class="mr-4">How It Works</span>
+							</a>
+						</li>
+						<li><a class="text-gray-400 hover:text-gray-500" href="#howitworks">Features</a></li>
+					</ul>
+					<div class="hidden xl:flex items-center ml-auto">
+						<button class="uppercase text-sm font-bold font-body border-2 border-blue-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-blue-300 ">
+							<span class="block mt-px">Demo</span>
+						</button>
+						<div class="w-px h-12 bg-gray-200 bg-opacity-50 ml-9 mr-11"></div>
+						
+						<button class="uppercase text-sm font-bold font-body border-2 border-blue-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-blue-300 ">
+							<span class="block mt-px">Try It Today!</span>
+						</button>
+					</div>
+				</div>
     </div>
     <div id="loader" style="top:50px;opacity:1;transition-property: opacity; transition-duration: .5s;"> Loading...
     </div>
     <div class="main_frame" style="opacity:0;transition-property: opacity; transition-duration: 1s;">
 
-        <div class="floating_content">
-            <div> The GLTR demo enables forensic inspection of the visual footprint of a
-                language model on input text to detect whether a text could be real or fake. It is a collaborative
-                effort between
-                <a href='http://hendrik.strobelt.com' target="_blank">Hendrik Strobelt</a>, <a
-                    href="https://scholar.harvard.edu/gehrmann/home" target="_blank">Sebastian Gehrmann</a>,
-                and <a href="http://nlp.seas.harvard.edu/rush.html" target="_blank">Alexander Rush</a> from the <a
-                    href="https://mitibmwatsonailab.mit.edu/" target="_blank" style="font-weight:700">MIT-IBM Watson AI
-                    lab</a>
-                and <a href="http://nlp.seas.harvard.edu/" target="_blank" style="font-weight:700">Harvard NLP</a>.
+        <div class="floating_content" style = "margin-top: 5%">
+            <div style = "font-size: 24px !important; font-weight: bold !important;"> This is a GPT-2 based demo that demostrates the functionality of LitBrain's language model. LitBrain enables a close inspection of student work based on input text, which determines whether a text was artifically written or not. 
+    
             </div>
-            <p>Please read the detailed <a href='http://gltr.io'>intro about GLTR</a>.
-            </p>
-            <p>Each text is analyzed by how likely each word would be the predicted word given
+            <p style = "padding-top: 5%; font-size: 16px; font-weight: SemiBold">Each text is analyzed by how likely each word would be the predicted word given
                 the context to the left.
                 If the actual used word would be in the Top 10 predicted words the background is colored green, for Top
                 100 in yellow,
-                Top 1000 red, otherwise violet. Try some sample texts from below and see for yourself if you can spot
-                the
-                difference between machine generated text and human generated text or try your own. (Tip: hover over
-                the words for more detail) </p>
-            <p>
-                The histograms show some statistic about the text: Frac(p) describes the fraction of probability
+                Top 1000 red, otherwise violet. </p>
+            <p style = "padding-top: 3%; font-size: 16px; font-weight: SemiBold">
+                The histograms show various statistics on the users inputted text: Frac(p) describes the fraction of probability
                 for the actual word divided by the maximum probability of any word at this position.
                 The Top 10 entropy describes the entropy along the top 10 results for each word.
             </p>
 
-            <h2>Test-Model: <span id="model_name"></span></h2>
-            <div class='demo' style="font-weight:bold;">Quick start - select a demo text:</div>
-            <div class="demos"></div>
+            <h2 style = "font-size: 24px; font-weight: bold; padding-top: 7%">Test-Model: <span id="model_name"></span></h2>
+            <div class='demo' style="font-weight:bold; padding-top: 2%">Quick start - select a demo text:</div>
+            <div class="demos" style = "padding-top: 1% !important; "></div>
 
             <!-- INPUT TEXT -->
-            <!--        <div id="text-input">-->
-            <div style="padding-top: 10px;"><span class="demo">or </span>enter a text:</div>
+            <div style="padding-top: 10px;" class = "font-bold"><span class="demo">or </span>enter a text:</div>
             <!--        <textarea id="test_text" rows="10" cols="80">The cat was playing in the garden.</textarea>-->
-            <textarea id="test_text" style="width: 100%;height: 50px;">The cat was playing in the garden.</textarea>
+            <textarea id="test_text" style="width: 100%;height: 50px;" class = "font-bold border-2">The cat was playing in the garden.</textarea>
             <br>
-            <button id="submit_text_btn"> analyze</button>
+            <button id="submit_text_btn" class = "rounded bg-blue-400 text-white font-bold"> analyze</button>
             <div class="loadersmall" style="margin-left:1pt;display: none;"></div>
 
 
@@ -183,16 +159,13 @@
             </div>
             <p style="width:100%;text-align: center;">
                 <a id="tweet_it"
-                    href="https://twitter.com/intent/tweet?text=Catch%20unicorns%20with%20GLTR(http://gltr.io/dist).&hashtags=GLTR,MITIBM,HarvardNLP">Tweet
-                    about GLTR</a>
+                    href="">Created By:</a>
                 <br>
-                <a href="https://mitibmwatsonailab.mit.edu/" target="_blank" style="font-weight:700">MIT-IBM Watson AI
-                    lab</a>
-                and <a href="http://nlp.seas.harvard.edu/" target="_blank" style="font-weight:700">Harvard NLP</a>
+                <a href="https://mitibmwatsonailab.mit.edu/" target="_blank" style="font-weight:700">Jahan Taila | Sathvik Bharaju | Douglas Lin | Kalp Poladia</a>
+            
                 <br>
                 <br>
-                <img src="demo/mit_ibm_heart_black.png" height="100px;">
-
+                
             </p>
         </div>
 
