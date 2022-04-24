@@ -1,4 +1,4 @@
-<body id="container" style="background-color:#16607C" >
+<body id="container" style="background-color:rgb(188, 244, 222)" >
 
     <div id="header">
 
@@ -50,7 +50,11 @@
 
                         <div class="item">
 
-                            <a class="ui default button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" href = "/client/home.html">Dashboard</a>
+                            <a class="ui default button" href = "/client/home.html">
+
+                                <button class="ui default button" onclick="document.getElementById('id02').style.display='block'" style="width:auto; color:rgb(17, 29, 74);" >Dashboard</button>
+
+                            </a>
 
                         </div>
 
@@ -64,8 +68,7 @@
 
     </div>
 
-
-
+ 
 
 <br><br>
 
@@ -73,11 +76,11 @@
 
 <!DOCTYPE html>
 
-
+ 
 
 <html lang="en">
 
-
+ 
 
 <head>
 
@@ -107,13 +110,13 @@
 
 <meta name="twitter:image" content="http://gltr.io/overview.png">
 
-
+ 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135666388-1"></script>
 
-
+ 
 
 <script>
 
@@ -123,21 +126,21 @@
 
     gtag('js', new Date());
 
-
+ 
 
     gtag('config', 'UA-135666388-1');
 
 </script>
 
-
+ 
 
 </head>
 
-
+ 
 
 <body>
 
-
+ 
 
 <!--<div class="navbar">-->
 
@@ -165,7 +168,7 @@
 
 <!--&lt;!&ndash;<option value="0">0</option>&ndash;&gt;-->
 
-
+ 
 
 <!--</select>-->
 
@@ -189,13 +192,13 @@
 
 <!--&lt;!&ndash;<button id="do_btn" class="btn">query</button>&ndash;&gt;-->
 
-
+ 
 
 <!--<label for="input_zoom">zoom:</label>-->
 
 <!--<input type="number" id="input_zoom" step=".1" value="1.2">-->
 
-
+ 
 
 <!--<label for="input_opacity">opacity:</label>-->
 
@@ -203,39 +206,37 @@
 
 <!--value=".3" min="0" max=".5" step=".05">-->
 
-
+ 
 
 <!--&lt;!&ndash;<span>ablate first:</span>&ndash;&gt;-->
 
 <!--&lt;!&ndash;<input id='noAb' type="number" value="20">&ndash;&gt;-->
 
-
-
-<!--</div>-->
+ 
 
 <!--</div>-->
 
+<!--</div>-->
 
+ 
 
 <!DOCTYPE html>
 
-
+ 
 
     <div class="floating_content">
 
        
 
-      <font size = "3">
+      
 
-        <div class='demo'style="font-weight:bold; color:white;">Upload your essay(s) here:</div>
-
-    </font>
+        <div class='demo'style="font-weight:bold; color:rgb(17, 29, 74);" ><b>Upload your essay(s) here:</b></div>
 
        <!-- <div class="demos"></div> -->
 
 <div class="test">
 
-
+ 
 
 <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
 
@@ -245,30 +246,22 @@
 
 <form action="/upload-target" class="dropzone"></form>
 
-<div id="loader" style="top:75px;opacity:1;transition-property: opacity; transition-duration: .5s;"> Loading...
+<div id="loader" style="top:50px;opacity:1;transition-property: opacity; transition-duration: .5s;"> Loading...
 
 </div>
 
 
 
 
-
-
 </div>
 
-
+ 
 
         <!-- INPUT TEXT -->
 
         <!--        <div id="text-input">-->
 
-        <font size = "3">
-
-            <div style="padding-top: 10px; color:white;><span class="demo">or </span>enter an essay:</div>
-
-        </font>
-
-        <br>
+        <div style="padding-top: 10px; color:rgb(17, 29, 74);><span class="demo"><b>or </b></span><b>enter an essay:</b></div>
 
         <!--        <textarea id="test_text" rows="10" cols="80">The cat was playing in the garden.</textarea>-->
 
@@ -276,25 +269,19 @@
 
         <br>
 
-       
+        <button id="submit_text_btn"> Validate</button>
 
         <script src="https://checkout.stripe.com/checkout.js"></script>
 
+ 
 
+<button id="customButton">Purchase</button>
 
-    <br/>
-
-    <button id="submit_text_btn"> Validate</button>
-
-    <button id="customButton">Purchase</button>
-
-    <button id="customButton2">Grade</button>
-
-
+ 
 
 <script>
 
-
+ 
 
 var handler = StripeCheckout.configure({
 
@@ -314,31 +301,31 @@ token: function(token) {
 
 });
 
-
+ 
 
 document.getElementById('customButton').addEventListener('click', function(e) {
 
-
+ 
 
 var node = document.getElementById('results'),
 
-
+ 
 
 htmlContent = node.innerHTML,
 
 // htmlContent = "Some <span class="foo">sample</span> text."
 
-
+ 
 
 textContent = node.textContent;
 
 console.log('hello')
 
-
+ 
 
 var x = document.getElementById("results").innerText;
 
-
+ 
 
 // Open Checkout with further options:
 
@@ -354,17 +341,17 @@ amount: 20000
 
 e.preventDefault();
 
-
+ 
 
 document.getElementById('customButton').remove();
 
 this.remove();
 
-
+ 
 
 });
 
-
+ 
 
 // Close Checkout on page navigation:
 
@@ -376,33 +363,33 @@ document.getElementById('customButton').remove();
 
 document.getElementsByClassName("customButton")[0].disabled=true;
 
-
+ 
 
 });
 
-
+ 
 
 </script>
 
-<br>
+ 
 
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
 
 <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
 
+ 
 
+<button id="customButton2">Grade</button>
 
-<!-- <button id="customButton2">Grade</button> -->
-
-
+ 
 
 <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=1 height=1/>
 
-
+ 
 
 <script>
 
-
+ 
 
 var test = document.getElementById('customButton2');
 
@@ -411,39 +398,37 @@ var test = document.getElementById('customButton2');
 
 test.onclick = function() {
 
-
-
-
+ 
 
 // Change this to div.childNodes to support multiple top-level nodes
 
-
+ 
 
 var mylist = document.getElementById('customButton2');
 
 mylist.insertAdjacentHTML('afterend', '<br><br><b><a style="color: white">Validity: 95% <br>Grade: 82%</a></b>');
 
-
+ 
 
 const a = tf.data.array(1);
 
 console.log(a)
 
-
+ 
 
 let net;
 
-
+ 
 
 async function app() {
 
 console.log('Loading mobilenet..');
 
-
+ 
 
 // net = await tf.loadLayersModel('model.json');
 
-
+ 
 
 // // Load the model.
 
@@ -451,7 +436,7 @@ console.log('Loading mobilenet..');
 
 // console.log('Sucessfully loaded model');
 
-
+ 
 
 // Make a prediction through the model on  image.
 
@@ -463,13 +448,13 @@ console.log(result);
 
 }
 
-
+ 
 
 app();
 
 }
 
-
+ 
 
 </script>
 
@@ -479,14 +464,13 @@ app();
 
 
 
-
         <div class="loadersmall" style="margin-left:1pt;display: none;"></div>
 
-
+ 
 
         <div id="all_result" style="opacity:0;transition-duration: .5s;display: none;">
 
-
+ 
 
             <div id="stats" style="text-align:center;">
 
@@ -518,7 +502,7 @@ app();
 
             <div id="#res" style="margin-top: 10px;">
 
-
+ 
 
                 <div style="display: inline-block;padding-right: 20px;">
 
@@ -568,11 +552,11 @@ app();
 
                 </div>
 
-
+ 
 
                 <div id="results" style="margin-top: 10px;">
 
-
+ 
 
                 </div>
 
@@ -587,7 +571,7 @@ app();
 
             <!-- <div style="height: 160px;"></div> -->
 
-
+ 
 
             <!--        </div>-->
 
@@ -597,11 +581,11 @@ app();
 
     </div>
 
-
+ 
 
 </div>
 
-
+ 
 
 <div id="major_tooltip" class='tooltip'
 
@@ -609,21 +593,21 @@ app();
 
     <div class="predictions" style="display: table;">
 
-
+ 
 
     </div>
 
-
+ 
 
     <br />
 
     <div class="myDetail">
 
-
+ 
 
     </div>
 
-
+ 
 
 </div>
 
@@ -632,15 +616,15 @@ app();
 
 <!--<div class="side_bar" >-->
 
-
+ 
 
 <!--&lt;!&ndash;<span style="padding-top: 10px;">Sort Units:</span>&ndash;&gt;-->
 
-
+ 
 
 <!--<div>-->
 
-
+ 
 
 <!--&lt;!&ndash;&#10004;&ndash;&gt;-->
 
@@ -654,7 +638,7 @@ app();
 
 <!--&gt;-->
 
-
+ 
 
 <!--<label for="recipe_select_ablation"> units sorted by:</label>-->
 
@@ -664,17 +648,17 @@ app();
 
 <!--<option value="abc">abc</option>-->
 
-
+ 
 
 <!--</select>-->
 
 <!--<span class='watch selected' id="watch_ablation">&#128064;</span>-->
 
-
+ 
 
 <!--</div>-->
 
-
+ 
 
 <!--<div>-->
 
@@ -694,7 +678,7 @@ app();
 
 <!--<option value="abc">&#45;&#45;selection&#45;&#45;</option>-->
 
-
+ 
 
 <!--</select>-->
 
@@ -702,7 +686,7 @@ app();
 
 <!--</div>-->
 
-
+ 
 
 <!--<div style="padding-top: 10px;">Units:</div>-->
 
@@ -714,7 +698,7 @@ app();
 
 <!--&lt;!&ndash;<div class="detail_img">&ndash;&gt;-->
 
-
+ 
 
 <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
@@ -722,27 +706,24 @@ app();
 
 <!--style="padding: 20px 30px ;">-->
 
-
-
-<!--</div>-->
-
-
+ 
 
 <!--</div>-->
 
+ 
 
+<!--</div>-->
+
+ 
 
 <script src="vendor.js"></script>
 
 <script src="start.js"></script>
 
-
+ 
 
 </body>
 
-
+ 
 
 </html>
-
-
-

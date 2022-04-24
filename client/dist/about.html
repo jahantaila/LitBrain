@@ -1,153 +1,297 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+ 
+
 <head>
+
     <meta charset="UTF-8">
-    <title>GLTR (glitter) v0.5 </title>
+
+    <title>LitBrain | Demo</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="#" />
+
     <link rel="stylesheet" type="text/css" href="start.css">
+
     <!--<link rel="stylesheet" type="text/css" href="vendor.css">-->
+
     <meta name="twitter:card" content="summary_large_image">
+
     <!--<meta name="twitter:site" content="@nytimes">-->
+
     <!--<meta name="twitter:creator" content="@SarahMaslinNir">-->
+
     <meta name="twitter:title" content="GLTR from MIT-IBM Watson AI Lab and HarvardNLP">
-    <meta name="twitter:description" content="This demo enables forensic inspection of the visual footprint 
+
+    <meta name="twitter:description" content="This demo enables forensic inspection of the visual footprint
+
           of a language model on input text to detect whether a text could be real or fake.">
+
     <meta name="twitter:image" content="http://gltr.io/overview.png">
 
+ 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135666388-1"></script>
+
     <script>
+
         window.dataLayer = window.dataLayer || [];
+
         function gtag() { dataLayer.push(arguments); }
+
         gtag('js', new Date());
 
+ 
+
         gtag('config', 'UA-135666388-1');
+
     </script>
 
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-		<link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css"/>
-		<link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b"/>
-		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/css\tailwind.css"/>
-		<link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/tailwind.min.css?v=bd4"/>
+ 
 
-		<script src="https://shuffle.dev/vendor/tailwind-uinel/js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+
+        <link rel="stylesheet" href="https://shuffle.dev/static/build/css/shuffle-preview.3a553ecf.css"/>
+
+        <link rel="stylesheet" href="https://shuffle.dev/vendor/icons/css/fontello.css?v=h7b"/>
+
+        <link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/css\tailwind.css"/>
+
+        <link rel="stylesheet" href="https://shuffle.dev/vendor/tailwind-uinel/css/tailwind.min.css?v=bd4"/>
+
+ 
+
+        <script src="https://shuffle.dev/vendor/tailwind-uinel/js/main.js"></script>
+
 </head>
+
+ 
 
 <body>
 
-   
+ 
 
+  
+
+ 
 
     <div>
-		<div class="text-gray-700 font-heading font-medium relative bg-gray-50 bg-opacity-50" id = "header">
-			<nav class="flex justify-between px-6 lg:px-12 py-8">
-				<div class="flex w-full items-center">
-					<a href="#">
-						<img class="h-12" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="">
-					</a>
-					<ul class="hidden xl:flex px-4 ml-32">
-						<li class="mr-16"><a class="text-gray-400 hover:text-gray-500" href="#howitworks">About Us</a></li>
-						<li class="mr-16">
-							<a class="flex items-center text-gray-400 hover:text-gray-500" href="#howitworks">
-								<span class="mr-4">How It Works</span>
-							</a>
-						</li>
-						<li><a class="text-gray-400 hover:text-gray-500" href="#howitworks">Features</a></li>
-					</ul>
-					<div class="hidden xl:flex items-center ml-auto">
-						<button class="uppercase text-sm font-bold font-body border-2 border-blue-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-blue-300 ">
-							<span class="block mt-px">Demo</span>
-						</button>
-						<div class="w-px h-12 bg-gray-200 bg-opacity-50 ml-9 mr-11"></div>
-						
-						<button class="uppercase text-sm font-bold font-body border-2 border-blue-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-blue-300 ">
-							<span class="block mt-px">Try It Today!</span>
-						</button>
-					</div>
-				</div>
+
+        <div class="text-gray-700 font-heading font-medium relative bg-gray-50 bg-opacity-50" id = "header">
+
+            <nav class="flex justify-between px-6 lg:px-12 py-8">
+
+                <div class="flex w-full items-center">
+
+                    <a href="#">
+
+                        <img class="h-12" src="https://i.ibb.co/T8Cbrrc/Screenshot-2022-04-21-184721-removebg-preview.png" alt="">
+
+                    </a>
+
+                    <ul class="hidden xl:flex px-4 ml-32">
+
+                        <li class="mr-16"><a class="text-gray-400 hover:text-gray-500" href="/client/about.html">About Us</a></li>
+
+                        <li class="mr-16">
+
+                            <a class="flex items-center text-gray-400 hover:text-gray-500" onClick = "window.location.href = '/client/home.html'">
+
+                                <span class="mr-4">How It Works</span>
+
+                            </a>
+
+                        </li>
+
+                        <li><a class="text-gray-400 hover:text-gray-500" href="/client/home.html">Features</a></li>
+
+                    </ul>
+
+                    <div class="hidden xl:flex items-center ml-auto">
+
+                        <button class="uppercase text-sm font-bold font-body border-2 border-blue-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-blue-300 ">
+
+                            <span class="block mt-px">Demo</span>
+
+                        </button>
+
+                        <div class="w-px h-12 bg-gray-200 bg-opacity-50 ml-9 mr-11"></div>
+
+                       
+
+                        <button class="uppercase text-sm font-bold font-body border-2 border-blue-200 border-opacity-50 rounded-full py-3 px-5 tracking-wide hover:border-blue-300 " onClick = "window.location.href = '/client/index.html'">
+
+                            <span class="block mt-px">Try It Today!</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
     </div>
+
     <div id="loader" style="top:50px;opacity:1;transition-property: opacity; transition-duration: .5s;"> Loading...
+
     </div>
+
     <div class="main_frame" style="opacity:0;transition-property: opacity; transition-duration: 1s;">
 
+ 
+
         <div class="floating_content" style = "margin-top: 5%">
-            <div style = "font-size: 24px !important; font-weight: bold !important;"> This is a GPT-2 based demo that demostrates the functionality of LitBrain's language model. LitBrain enables a close inspection of student work based on input text, which determines whether a text was artifically written or not. 
+
+            <div style = "font-size: 24px !important; font-weight: bold !important;"> This is a GPT-2 based demo that demostrates the functionality of LitBrain's language model. LitBrain enables a close inspection of student work based on input text, which determines whether a text was artifically written or not.
+
     
+
             </div>
+
             <p style = "padding-top: 5%; font-size: 16px; font-weight: SemiBold">Each text is analyzed by how likely each word would be the predicted word given
+
                 the context to the left.
+
                 If the actual used word would be in the Top 10 predicted words the background is colored green, for Top
+
                 100 in yellow,
+
                 Top 1000 red, otherwise violet. </p>
+
             <p style = "padding-top: 3%; font-size: 16px; font-weight: SemiBold">
+
                 The histograms show various statistics on the users inputted text: Frac(p) describes the fraction of probability
+
                 for the actual word divided by the maximum probability of any word at this position.
+
                 The Top 10 entropy describes the entropy along the top 10 results for each word.
+
             </p>
 
+ 
+
             <h2 style = "font-size: 24px; font-weight: bold; padding-top: 7%">Test-Model: <span id="model_name"></span></h2>
+
             <div class='demo' style="font-weight:bold; padding-top: 2%">Quick start - select a demo text:</div>
+
             <div class="demos" style = "padding-top: 1% !important; "></div>
 
+ 
+
             <!-- INPUT TEXT -->
+
             <div style="padding-top: 10px;" class = "font-bold"><span class="demo">or </span>enter a text:</div>
+
             <!--        <textarea id="test_text" rows="10" cols="80">The cat was playing in the garden.</textarea>-->
+
             <textarea id="test_text" style="width: 100%;height: 50px;" class = "font-bold border-2">The cat was playing in the garden.</textarea>
+
             <br>
+
             <button id="submit_text_btn" class = "rounded bg-blue-400 text-white font-bold"> analyze</button>
+
             <div class="loadersmall" style="margin-left:1pt;display: none;"></div>
 
+ 
 
             <div id="all_result" style="opacity:0;transition-duration: .5s;display: none;">
 
+ 
+
                 <div id="stats" style="text-align:center;">
+
                     <div style="display:inline-block;text-align: center">
+
                         <div>top k count</div>
+
                         <svg id="stats_top_k"></svg>
+
                     </div>
+
                     <div style="display:inline-block;text-align: center">
+
                         <div>frac(p) histogram</div>
+
                         <svg id="stats_frac"></svg>
+
                     </div>
+
                     <div style="display:inline-block;text-align: center">
+
                         <div>top 10 entropy(p) histogram</div>
+
                         <svg id="stats_entropy"></svg>
+
                     </div>
+
                 </div>
+
                 <div id="#res" style="margin-top: 10px;">
 
+ 
+
                     <div style="display: inline-block;padding-right: 20px;">
+
                         <button id="mode_topk" class="btn_mode selected"> Top K
+
                         </button>
+
                         <!-- <button id="mode_diff_p" class="btn_mode"> Diff P</button> -->
+
                         <button id="mode_frac_p" class="btn_mode"> Frac P</button>
+
                     </div>
+
                     <div style="display: inline-block;">
+
                         Colors (top k):
+
                         <div
+
                             style="width: 15px; height: 15px;background-color: #ADFF80; display: inline-block;position: relative; top:3px;">
+
                         </div>
+
                         <input value=10 type="number" id="color1" class='colorThreshold' style="width:50px;" />
+
                         <div
+
                             style="width: 15px; height: 15px;background-color: #FFEA80; display: inline-block;position: relative;  top:3px;">
+
                         </div>
+
                         <input value=100 type="number" id="color2" class='colorThreshold' style="width:50px;" />
+
                         <div
+
                             style="width: 15px; height: 15px;background-color: #FF9280; display: inline-block;position: relative;  top:3px;">
+
                         </div>
+
                         <input value=1000 type="number" id="color3" class='colorThreshold' style="width:50px;" />
+
                         <div
+
                             style="width: 15px; height: 15px;background-color: #E5B0FF; display: inline-block;position: relative;  top:3px;">
+
                         </div>
+
                     </div>
+
+ 
 
                     <div id="results" style="margin-top: 10px;">
 
+ 
+
                     </div>
+
                 </div>
+
 
 
 
@@ -155,95 +299,176 @@
 
                 <!-- <div style="height: 160px;"></div> -->
 
+ 
+
                 <!--        </div>-->
+
             </div>
+
             <p style="width:100%;text-align: center;">
+
                 <a id="tweet_it"
+
                     href="">Created By:</a>
+
                 <br>
+
                 <a href="https://mitibmwatsonailab.mit.edu/" target="_blank" style="font-weight:700">Jahan Taila | Sathvik Bharaju | Douglas Lin | Kalp Poladia</a>
-            
+
+           
+
                 <br>
+
                 <br>
-                
+
+               
+
             </p>
+
         </div>
+
+ 
 
     </div>
 
+ 
 
     <div id="major_tooltip" class='tooltip'
+
         style="background: #dddddd;width: 200px; position: fixed;pointer-events: none;opacity: 0;">
+
         <div class="predictions" style="display: table;">
 
+ 
+
         </div>
+
+ 
 
         <br />
+
         <div class="myDetail">
+
+ 
 
         </div>
 
+ 
 
     </div>
+
+ 
 
     <!--<div class="side_bar" >-->
 
+ 
 
     <!--&lt;!&ndash;<span style="padding-top: 10px;">Sort Units:</span>&ndash;&gt;-->
 
+ 
 
     <!--<div>-->
 
+ 
 
     <!--&lt;!&ndash;&#10004;&ndash;&gt;-->
+
     <!--<label for="rm_unit">ablate first: </label>-->
+
     <!--<input type="number" id="rm_unit"-->
+
     <!--style="background-color: black; color: white;"-->
+
     <!--value="40"-->
+
     <!--&gt;-->
 
+ 
+
     <!--<label for="recipe_select_ablation"> units sorted by:</label>-->
+
     <!--<select id="recipe_select_ablation"-->
+
     <!--style="margin-top: 5px; color: white;">-->
+
     <!--<option value="abc">abc</option>-->
 
+ 
+
     <!--</select>-->
+
     <!--<span class='watch selected' id="watch_ablation">&#128064;</span>-->
 
+ 
+
     <!--</div>-->
+
+ 
 
     <!--<div>-->
+
     <!--<label for="cp_unit">copy first: </label>-->
+
     <!--<input type="number" id="cp_unit"-->
+
     <!--style="background-color: black; color: white;"-->
+
     <!--value="5">-->
+
     <!--<label for="recipe_select_copy"> units sorted by:</label>-->
+
     <!--<select id="recipe_select_copy"-->
+
     <!--style="margin-top: 5px; color: white;">-->
+
     <!--<option value="abc">&#45;&#45;selection&#45;&#45;</option>-->
 
+ 
+
     <!--</select>-->
+
     <!--<span class='watch' id="watch_copy">&#128064;</span>-->
+
     <!--</div>-->
+
+ 
 
     <!--<div style="padding-top: 10px;">Units:</div>-->
+
     <!--&lt;!&ndash;<div>&ndash;&gt;-->
+
     <!--&lt;!&ndash;<button id="reset_all"> all orig</button>&ndash;&gt;-->
+
     <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
     <!--&lt;!&ndash;<div class="detail_img">&ndash;&gt;-->
 
+ 
+
     <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
     <!--<div id="units"-->
+
     <!--style="padding: 20px 30px ;">-->
 
-    <!--</div>-->
+ 
 
     <!--</div>-->
 
+ 
+
+    <!--</div>-->
+
+ 
 
     <script src="vendor.js"></script>
+
     <script src="start.js"></script>
 
+ 
+
 </body>
+
+ 
 
 </html>
